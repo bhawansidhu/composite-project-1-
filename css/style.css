@@ -4,12 +4,59 @@ html {
 }
  
 body {
-    background-color:rgb(175, 0, 110);
+   /* background-color:rgb(175, 0, 110);*/
+   background-color: white;
+}
+.fas{
+    color: darkmagenta;
+    
 }
  .part.1 {
      
  }
- .star{
-     color: darkmagenta;
-     
+ .search{
+     text-align: center;
+          padding: 0.1em 1em 0.1em 1em;
  }
+
+ .search ul{
+    list-style-type: none;
+   margin-left: 41em;
+   /* padding: 0.1em 0.1em 0.1em 0.1em; */
+    overflow: hidden;
+    background-color:pink;
+
+    border: 0.1em solid darkmagenta;
+
+ }
+
+ .search li{
+    display: inline-block;
+    padding: 0.3em 0.3em 0.3em 0.3em;
+   
+    font-size: 1.5em;
+ }
+
+ .search a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0.5em  0.5em 0.5em;
+    text-decoration: none;
+ }
+
+ .search li a:hover {
+    background-color:white;
+    color: lightseagreen;
+  }
+
+  .box{
+    list-style-type: none;
+    overflow: hidden;
+    border: lightsteelblue;
+    background-color: lightsteelblue;
+    
+   
+   
+
+  }
