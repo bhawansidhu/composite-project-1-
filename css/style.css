@@ -285,7 +285,7 @@ main{
 }
   
 .footer-area .policy{
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: blue;
 }
@@ -293,14 +293,13 @@ main{
 
 .footer-area{
   width: 100%;
-  overflow: hidden;
-  display: block;
+  display: inline-block;
   background-color: rgb(19, 21, 22);
   color: white;
   height: 50vh;
   margin-top:0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; 
 }
 
 
@@ -311,7 +310,7 @@ main{
 
 .footer-area .social li a{
   list-style-type: none;
-  display: inline-block;
+  display: block;
   font-size: 1.5rem;
   border: black;
   background-color: rgb(10, 11, 12); ;
@@ -337,7 +336,7 @@ main{
 }
 
 .footer-area li a {
-  display:inline-block;
+  display:block;
   color:rgb(186, 189, 192) ;
   text-decoration: none;
   font-size: 1rem;
