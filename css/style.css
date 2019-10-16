@@ -1,6 +1,7 @@
 html {
    margin: 0;
    padding:0;
+   box-sizing: border-box;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 .part1 {
  background-color: rgb(211, 214, 218);
-  height: 25vh;
+ width: 100%;
   border-top: 0.1rem solid  rgb(217, 222, 228); 
 
 }
@@ -26,22 +27,21 @@ body {
 
 .logo{
    top: 0.5em;
-   left: 0.5em;
+   text-align: center;
    
 }
 .navbar{
-   text-align: right;
-   }
+  text-align: right;
+}
  
 .navbar a{
-   color: rgb(117, 24, 83);
-   font-size: 1.1rem;
-   text-decoration: none;
+ color: rgb(117, 24, 83);
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .navbar ul {
   list-style-type: none;
-  margin-bottom: 1rem;;
   padding: 0;
   
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .search{
-  text-align: right;
+  text-align: left;
   padding-left: 0.5em;
   
 }
@@ -150,10 +150,14 @@ body {
   padding:  0.7em 1.5em 0.3em 3em; 
 }
   
+main{
+  margin-top: 0;
+}
  
 .top{
-  margin: 2rem 0 0 4rem;
-  color: rgb(122, 16, 81);
+  margin-top: 2rem;
+ padding: 0.5rem 0 1em 1em;
+ color: rgb(128, 12, 85);
 }
  
 
@@ -161,15 +165,22 @@ body {
   display: inline-block;
   overflow: hidden;
   max-width: 23em;
-  margin: 1em 0;
+  margin: 0;
   text-align: center;
   border-radius: 0.3em;
   border: 0.1em solid rgb(210, 218, 221) ;
   box-shadow: 0.01em 0.01em 0.1em 0.1em rgb(210, 218, 221) ;
   margin: 2em 2em 2em 2em;
 }
+
 .bold{
   font-weight: bold;
+}
+
+.image-link{
+  font-weight: bold;
+  padding: 0.1em 1.5em 0.1em 1.5em ;
+
 }
 .image-heading .button {
   color: white;
@@ -206,6 +217,10 @@ body {
 
 .star{
  padding-left: 14em;
+}
+
+.email{
+  width: 100%;
 }
 
 .email ul {
@@ -267,21 +282,52 @@ body {
   text-decoration: underline;
 }
   
+.footer-area .policy{
+  display: inline-block;
+  text-decoration: none;
+  color: blue;
+}
+
 
 .footer-area{
+  width: 100%;
   overflow: hidden;
   display: block;
-  background-color: rgb(28, 30, 31);
+  background-color: rgb(19, 21, 22);
   color: white;
-  height: 40vh;
+  height: 50vh;
   margin-top:0;
-}  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.footer-area .policy li a {
+  text-decoration: none;
+  color: rgb(38, 99, 179);
+}
+
+
+.footer-area .social li a{
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: black;
+  background-color: rgb(10, 11, 12); ;
+  margin: 0.5em;
+  padding:0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+ 
+  
 
 .footer-area ul{
   list-style-type: none;
   padding-left: 0.5em;
   margin: 0;
   line-height: 1.2em;
+  
+  
 }
 
 .footer-area li a:hover {
@@ -290,30 +336,32 @@ body {
 }
 
 .footer-area li a {
-  display: block;
+  display:inline-block;
   color:rgb(186, 189, 192) ;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 1rem;
 } 
- 
 
-}
 
-@media screen  (max-width:450px){
-  .main{
+@media screen  (max-width:425px) and (min-width:300px){
+  .part1 .search{
     grid-template-columns: 1fr;
+    
+    margin-right: 3rem;
+    
+  }
+
+  .photos{
+    grid-template-columns: 1fr;
+    margin-left: 20rem;
   } 
-  .navbar ul{
-    text-align: center;
-  }
-  .search{
-    text-align: center;
-  }
+ 
+  
 }
 
 
 
-@media screen and (max-width:700px) and (min-width:450px){
+@media screen (max-width:768px) and (min-width:425px){
     .main{
       grid-template-columns: 1fr 1fr;
     }
@@ -321,7 +369,7 @@ body {
 }
 
 
-@media screen and (max-width:1323px) and (min-width:700px){
+@media screen (max-width:1024px) and (min-width:768px){
     .main{
      grid-template-columns: 1fr 1fr 1fr;
     }
