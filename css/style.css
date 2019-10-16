@@ -32,6 +32,7 @@ body {
 }
 .navbar{
   text-align: right;
+  margin-right: 3em;
 }
  
 .navbar a{
@@ -67,8 +68,9 @@ body {
 }
 
 .search{
-  text-align: center;
+  text-align: right;
   padding-left: 0.5em;
+  margin-right: 5em;
   
 }
 
@@ -283,69 +285,79 @@ main{
 .box4:hover{
   text-decoration: underline;
 }
-  
-.footer-area .policy{
-  display: block;
-  text-decoration: none;
-  color: blue;
-}
-
 
 .footer-area{
   width: 100%;
-  display: inline-block;
+  display: block;
   background-color: rgb(19, 21, 22);
   color: white;
-  height: 50vh;
-  margin-top:0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+   padding: 2em;
 }
 
 
-.footer-area .policy li a {
-  text-decoration: none;
-  color: rgb(38, 99, 179);
+.footer-area .explore{
+    padding-right: 13em;
 }
-
-.footer-area .social li a{
-  list-style-type: none;
-  display: block;
-  font-size: 1.5rem;
-  border: black;
-  background-color: rgb(10, 11, 12); ;
-  margin: 0.5em;
-  padding:0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
- 
-  
-
 .footer-area ul{
   list-style-type: none;
-  padding-left: 0.5em;
+  padding-left: 1.5em;
+  padding-bottom: 0em;
   margin: 0;
-  line-height: 1.2em;
-  
-  
+  line-height: 1.5em;
 }
-
-.footer-area li a:hover {
- text-decoration: underline;
- 
-}
+  
 
 .footer-area li a {
-  display:block;
   color:rgb(186, 189, 192) ;
   text-decoration: none;
   font-size: 1rem;
 } 
 
-.social .icons{
-  display: block;
+.footer-area li a:hover {
+  text-decoration: underline;
+  
 }
 
+
+.footer-area .policy{
+  text-decoration: none;
+  color: blue;
+ 
+  padding-left: 14em;
+}
+
+.footer-area .policy li a:hover {
+  text-decoration: underline;
+  color:white;
+}
+
+
+
+.footer-area .policy li a {
+  text-decoration: none;
+  color: rgb(38, 99, 179);
+  text-align: center;
+}
+
+.footer-area .social li{
+  display: inline-block;
+  text-align: right;
+}
+
+.footer-area .social ul{
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-left:12em;
+}
+  .footer-area .social li a{
+  
+  border: black;
+  background-color: rgb(10, 11, 12);
+  padding:0.5rem 0.5rem 0.5rem 0.5rem; 
+}
+
+ 
 
 @media screen and (max-width:425px) and (min-width:300px){
   .part1 .search{
@@ -367,12 +379,13 @@ main{
   .box4{
     margin-left:14em;
   }
+    
   
 }
 
 
 
-@media screen and  (max-width:768px) and (min-width:425px){
+ @media screen and  (max-width:768px) and (min-width:425px){
     
   .main{
       grid-template-columns: 1fr 1fr;
@@ -390,13 +403,15 @@ main{
       margin-left:14em;
     }
     .navbar ul{
-      margin-right: 2em;
+      margin-right: 1em;
     }
 
-}
+    
+ }
+ 
 
 
-@media screen and (max-width:1200px) and (min-width:768px){
+ @media screen and (max-width:1200px) and (min-width:768px){
     .main{
      grid-template-columns: 1fr 1fr 1fr;
     }
@@ -404,5 +419,5 @@ main{
     .navbar ul{
       margin-right: 19em;
     }
-}
+  }
 
