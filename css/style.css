@@ -26,8 +26,8 @@ body {
 }
 
 .logo{
-   top: 0.5em;
-   text-align: center;
+  top: 0.5em;
+  text-align: center;
    
 }
 .navbar{
@@ -350,7 +350,8 @@ main{
   font-size: 1.5rem;
   padding-left:12em;
 }
-  .footer-area .social li a{
+
+.footer-area .social li a{
   
   border: black;
   background-color: rgb(10, 11, 12);
@@ -385,7 +386,7 @@ main{
 
 
 
- @media screen and  (max-width:768px) and (min-width:425px){
+@media screen and  (max-width:768px) and (min-width:425px){
     
   .main{
       grid-template-columns: 1fr 1fr;
@@ -407,11 +408,11 @@ main{
     }
 
     
- }
+}
  
 
 
- @media screen and (max-width:1200px) and (min-width:768px){
+@media screen and (max-width:1200px) and (min-width:768px){
     .main{
      grid-template-columns: 1fr 1fr 1fr;
     }
